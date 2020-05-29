@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="/main.css">
+  <title>Issue Tracker</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>
+      <a href="/" class="project-logo">Issue Tracker</a>
+    </h1>
+    <main>
+      <div class="content">
+        <div class="content__controls">
+          <div class="content__navigation">
+            <a href="/"><i class="fas fa-home"></i></a>
+          </div>
+          <i class="fas fa-plus content__toggle-modal" title="Create new project"></i>
+        </div>
+        <ul class="content__projects-list"></ul>
+      </div>
+    </main>
+    <div class="coded-by">Coded by <a href="https://www.freecodecamp.org/fcc5b94da85-6e92-4331-8fbb-c5c610c6a41a" target="_blank">Pavel
+        P.</a> for freeCodeCamp</div>
+  </div>
+  <div class="modal">
+    <div class="modal__container">
+      <form class="modal-form" autocomplete="off"></form>
+    </div>
+  </div>
+  <script src="/js/main.js"></script>
+  <script src="/js/projects.js"></script>
+</body>
+
+</html>

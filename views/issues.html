@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="/main.css">
+  <title></title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>
+      <a href="/" class="project-logo">Issue Tracker</a>
+    </h1>
+    <main>
+      <div class="content">
+        <div class="content__controls">
+          <div class="content__navigation">
+            <a href="/"><i class="fas fa-home"></i></a>
+          </div>
+          <i class="fas fa-filter content__toggle-filters" title="Filter issues"></i>
+          <i class="fas fa-plus content__toggle-modal" title="Create new issue"></i>
+          <form class="filters-form" autocomplete="off">
+            <div class="filters-form__group">
+              <input type="text" name="issue_title" placeholder="Issue title" maxlength="30">
+              <input type="text" name="created_by" placeholder="Created by" maxlength="20">
+            </div>
+            <div class="filters-form__group">
+              <input type="text" name="assigned_to" placeholder="Assigned to" maxlength="20">
+              <input type="text" name="status_text" placeholder="Status" maxlength="20">
+            </div>
+            <div class="filters-form__group">
+              <div class="filters-form__checkboxes">
+                <input type="checkbox" class="filters-form__solved" name="open" value="false" title="Solved issues">
+                <i class="fa fa-circle"></i>
+                <input type="checkbox" class="filters-form__pending" name="open" value="true" title="Pending issues">
+                <i class="fa fa-circle"></i>
+              </div>
+              <div class="filters-form__actions">
+                <input type="submit" class="filters-form__apply confirm-action" value="Apply">
+                <input type="button" class="filters-form__reset reject-action" value="Reset">
+              </div>
+            </div>
+          </form>
+        </div>
+        <ul class="content__issues-list visible"></ul>
+      </div>
+    </main>
+    <div class="coded-by">Coded by <a href="https://www.freecodecamp.org/fcc5b94da85-6e92-4331-8fbb-c5c610c6a41a" target="_blank">Pavel
+        P.</a> for freeCodeCamp</div>
+  </div>
+  <div class="modal">
+    <div class="modal__container">
+      <form class="modal-form" autocomplete="off"></form>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/issues.js"></script>
+</body>
+
+</html>
